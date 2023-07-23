@@ -856,11 +856,12 @@ svg path:hover {
   }
 }
 @media only screen and (max-width: 765px) {
+  body {
+    height: 100%;
+    width: 100%;
+  }
   .container {
     width: 100%;
-    max-width: 80.8rem;
-    margin-left: auto;
-    margin-right: auto;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
@@ -893,70 +894,97 @@ svg path:hover {
     margin-left: auto;
     margin-right: -6.5rem;
   }
+  .header .header__hero-container .header__hero-container__imgs .header__hero-container__oval-image-2 {
+    display: none;
+  }
 }
 @media only screen and (max-width: 375px) {
   .container {
     width: 100%;
     max-width: 343px;
-    padding-left: 0.8rem;
-    padding-right: 0.8rem;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
     margin-left: auto;
     margin-right: auto;
   }
-  .header__top {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .header {
+    background-position: top 15.3rem left -34.2rem;
   }
-  .header__top__containier {
+  .header__hero-container__imgs {
+    width: 17.4rem;
+    height: 38.3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    margin-top: 4.9rem;
+    margin-right: 5rem;
   }
-  .header__hero-container {
-    margin-bottom: 8rem;
+  .header__hero-container__imgs .header__hero-container__man-img {
+    width: 100%;
+    width: 17.4rem;
+    height: 24.2rem;
+    margin-bottom: -18rem;
+  }
+  .header__hero-container__imgs .header__hero-container__oval-image {
+    display: none;
+  }
+  .header__hero-container__imgs .header__hero-container__oval-image-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -20rem;
+  }
+  .header__top a {
+    margin-bottom: 4rem;
+  }
+  .header__top .header__top__containier {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5rem;
+  }
+  .header__top .header__top__containier .sitenav {
+    margin-bottom: 2rem;
+    text-align: center;
   }
   .header__hero-container__div {
     position: relative;
     top: 15rem;
     margin-top: 44rem;
-  }
-  .header__hero-container__h1 {
-    font-size: 4rem;
-    line-height: 1;
-  }
-  .header__hero-container__text {
     text-align: center;
   }
-  .header__hero-container__man-img {
-    margin-top: -10rem;
-    width: 17.4rem;
-    height: 24.2rem;
+  .header__hero-container__div a {
+    margin-left: 15rem;
   }
-  .header__hero-container__link {
-    margin-left: 11rem;
-    margin-bottom: 8rem;
+  .header__hero-container__div .header__hero-container__h1 {
+    font-size: 1.8rem;
+  }
+  .header__hero-container__div .header__hero-container__text {
+    text-align: center;
+    margin-left: 15rem;
+    font-size: 1.8rem;
+    line-height: 1.6;
   }
   .main__top__container {
     display: flex;
     flex-direction: column;
   }
+  .main__top__container .main__top__container__wrapper-div {
+    margin-right: -17rem;
+    text-align: center;
+  }
+  .main__hero__container__top {
+    gap: 5rem;
+  }
   .wrapper__all-box {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
   }
-  .footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .wrapper__all-box .box-1, .wrapper__all-box .box-2, .wrapper__all-box .box-3, .wrapper__all-box .box-4, .wrapper__all-box .box-5, .wrapper__all-box .box-6 {
+    margin-left: 15rem;
   }
-  .footer .site__logo {
-    margin-right: 5rem;
+  .wrapper__all-box .btn {
+    margin-left: 15rem;
   }
 }
 .footer {
@@ -1079,12 +1107,31 @@ svg path:hover {
     gap: 0;
     margin-bottom: -1.2rem;
   }
+  .footer__nav__container .site__logo-2 {
+    display: none;
+  }
   .footer__container-contac-div {
     text-align: center;
     margin-bottom: -10rem;
   }
   .form {
     padding-bottom: 10rem;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .container {
+    width: 100%;
+    max-width: 343px;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer__nav__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 main {
